@@ -18,6 +18,8 @@ Ask your AI assistant about LEGO sets, find specific bricks, look up minifigures
 
 **10 tools. Zero config. Works with every MCP-compatible IDE.**
 
+[![lego-oracle MCP server](https://glama.ai/mcp/servers/gregario/lego-oracle/badges/card.svg)](https://glama.ai/mcp/servers/gregario/lego-oracle)
+
 ## Install
 
 ```bash
