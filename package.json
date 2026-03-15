@@ -8,7 +8,7 @@
   },
   "files": ["dist", "README.md", "LICENSE"],
   "scripts": {
-    "build": "tsc && cp src/data/schema.sql dist/data/schema.sql && chmod 755 dist/server.js",
+    "build": "tsc && mkdir -p dist/data && cp src/data/schema.sql dist/data/schema.sql && (test -f src/data/lego.sqlite && cp src/data/lego.sqlite dist/data/lego.sqlite || true)",
     "dev": "tsx src/server.ts",
     "lint": "tsc --noEmit",
     "test": "vitest run",
