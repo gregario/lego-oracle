@@ -1,12 +1,17 @@
 {
   "name": "lego-oracle",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.gregario/lego-oracle",
   "description": "LEGO sets, parts, minifigs, and inventories as an MCP server",
   "type": "module",
   "bin": {
     "lego-oracle": "dist/server.js"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc && mkdir -p dist/data && cp src/data/schema.sql dist/data/schema.sql && (test -f src/data/lego.sqlite && cp src/data/lego.sqlite dist/data/lego.sqlite || true)",
     "dev": "tsx src/server.ts",
@@ -30,8 +35,20 @@
     "typescript": "^5.7",
     "vitest": "^3.0"
   },
-  "engines": { "node": ">=18" },
-  "repository": { "type": "git", "url": "https://github.com/gregario/lego-oracle.git" },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregario/lego-oracle.git"
+  },
   "license": "MIT",
-  "keywords": ["mcp", "model-context-protocol", "lego", "rebrickable", "minifig", "bricks"]
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "lego",
+    "rebrickable",
+    "minifig",
+    "bricks"
+  ]
 }
