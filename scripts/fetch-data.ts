@@ -67,6 +67,8 @@ async function main(): Promise<void> {
 
     // Step 3: Clear any existing data (fresh DB, but just in case)
     console.error('\nStep 3: Clearing existing data...\n');
+    // Disable FK checks during bulk ingestion (themes have self-referential parent_id)
+    db.pragma('foreign_keys = OFF');
     clearAllData(db);
 
     // Step 4: Ingest CSVs in dependency order
@@ -77,6 +79,9 @@ async function main(): Promise<void> {
       const count = ingest(db, csv);
       console.error(`  ${filename}: ${count.toLocaleString()} rows`);
     }
+
+    // Re-enable FK checks
+    db.pragma('foreign_keys = ON');
 
     // Step 5: Log summary
     console.error('\n=== Ingestion complete ===\n');
