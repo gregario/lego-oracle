@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "tools_count": 10,
   "tests_count": 141,
-  "npm": { "published": true, "version": "0.1.0" },
+  "npm": { "published": true, "version": "0.1.1" },
   "glama": { "listed": false, "score_badge": false, "ownership_claimed": false },
   "mcp_registry": { "registered": false, "mcp_name": "io.github.gregario/lego-oracle" },
   "awesome_mcp_servers": { "pr_submitted": false, "pr_url": null },

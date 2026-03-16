@@ -222,6 +222,16 @@ async function main(): Promise<void> {
   console.error(`[lego-oracle] v${version} starting on stdio...`);
   await server.connect(transport);
   console.error(`[lego-oracle] Server running: 10 tools registered`);
+
+  process.on('SIGINT', async () => {
+    await server.close();
+    process.exit(0);
+  });
+
+  process.on('SIGTERM', async () => {
+    await server.close();
+    process.exit(0);
+  });
 }
 
 main().catch((err) => {
