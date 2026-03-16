@@ -1,6 +1,6 @@
 {
   "name": "lego-oracle",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "mcpName": "io.github.gregario/lego-oracle",
   "description": "LEGO sets, parts, minifigs, and inventories as an MCP server",
   "type": "module",
