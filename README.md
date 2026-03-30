@@ -190,3 +190,8 @@ Data from [Rebrickable](https://rebrickable.com). LEGO is a trademark of the LEG
 ## License
 
 MIT
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/gregario-lego-oracle).
+
