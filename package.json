@@ -40,7 +40,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gregario/lego-oracle.git"
+    "url": "git+https://github.com/gregario/lego-oracle.git"
+  },
+  "homepage": "https://github.com/gregario/lego-oracle#readme",
+  "bugs": {
+    "url": "https://github.com/gregario/lego-oracle/issues"
   },
   "license": "MIT",
   "keywords": [
